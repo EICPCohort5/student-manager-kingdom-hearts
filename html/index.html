@@ -8,22 +8,49 @@
   <title>Document Template</title>
 </head>
 <body>
-  <main class="container"></main>
-  <form id="student-form" action="">
-    <label for="fname">Enter First Name</label>
-    <input type="text" id="fname" name="firstname">
+  <main class="container">
+    <h1 class="p-4">Welcome to the Student Manager</h1>
+    <form id="student-form" action="" class="w-50 m-auto">
+      <div class="form-group">
+        <label for="fname">Enter First Name</label>
+        <input type="text" id="fname" name="firstname" class="form-control" placeholder="Enter first name">
+      </div>
 
-    <label for="lname">Enter Last Name</label>
-    <input type="text" id="lname" name="secondname">
-    
-    <label for="location">Enter Location</label>
-    
-    <select>
-      <option value="USA">USA</option>
-      <option value="UK">UK</option>
-    </select>
-    <input type="submit" value="submit">
-  </form>
+      <div class="form-group">
+        <label for="lname">Enter Last Name</label>
+        <input type="text" id="lname" name="secondname" class="form-control" placeholder="Enter last name">
+      </div>
+      
+      <div class="form-group">
+        <label for="location">Enter Location</label>
+        <select class="form-control">
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+        </select>
+      </div>
+
+      <button type="submit mt-2" class="btn btn-primary">Submit</button>
+    </form>
+
+    <table class="table mt-5">
+      <thead>
+        <tr>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">Maria</td>
+          <td>Ringes</td>
+          <td>USA</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
   <script src="main.js" type="module"></script>
 </body>
 </html>
